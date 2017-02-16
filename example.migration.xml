@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<migrationConfiguration>
+    <name>Migration ... from version 3.x to 4.x</name>
+    <sources>
+        <source>
+            <filePattern>.*\.java</filePattern>
+            <path>src/test/java</path>
+        </source>
+        <source>
+            <filePattern>.*\.groovy</filePattern>
+            <path>src/test/groovy</path>
+        </source>
+    </sources>
+    <importUpdates>
+        <importUpdate>
+            <oldPath>some.library.old.path.OldClass</oldPath>
+            <newPath>some.library.new.NewClass</newPath>
+        </importUpdate>
+    </importUpdates>
+</migrationConfiguration>

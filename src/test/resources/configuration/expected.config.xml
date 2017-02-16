@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<migrationConfiguration>
+    <importUpdates>
+        <importUpdate>
+            <newPath>new.path.ClassName</newPath>
+            <oldPath>old.path.ClassName</oldPath>
+        </importUpdate>
+        <importUpdate>
+            <newPath>new.sql.NewSQl</newPath>
+            <oldPath>old.sql.path.OldSqlName</oldPath>
+        </importUpdate>
+    </importUpdates>
+    <sources>
+        <source>
+            <filePattern>.*\.java</filePattern>
+            <path>src/test/java</path>
+        </source>
+        <source>
+            <filePattern>.*\.groovy</filePattern>
+            <path>src/test/groovy</path>
+        </source>
+    </sources>
+</migrationConfiguration>
