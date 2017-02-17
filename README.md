@@ -33,7 +33,7 @@ Add plugin to your project:
                     <plugin>
                         <groupId>org.rakk</groupId>
                         <artifactId>migration-maven-plugin</artifactId>
-                        <version>1.0</version>
+                        <version>1.0-SNAPSHOT</version>
                     </plugin>
                 </plugins>
             </build>
@@ -53,12 +53,16 @@ Execute this command to run plugin:
 mvn org.rakk:migration-maven-plugin:migrate -Pmigrate
 ```
 
-## Example configuration: example.configuration.xml
+## Example configuration: example.migration.xml
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <migrationConfiguration>
     <name>Migration ... from version 3.x to 4.x</name>
     <sources>
+        <source>
+            <filePattern>.*\.java</filePattern>
+            <path>src/main/java</path>
+        </source>
         <source>
             <filePattern>.*\.java</filePattern>
             <path>src/test/java</path>
