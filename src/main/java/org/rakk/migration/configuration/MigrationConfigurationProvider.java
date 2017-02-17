@@ -40,10 +40,10 @@ public class MigrationConfigurationProvider {
                 if (file.isFile()) {
                     return true;
                 } else {
-                    log.debug(String.format("Skipping directory: %s", file.getName()));
+                    log.debug("Skipping directory: '" + file.getName() + "'");
                 }
             } else {
-                log.debug(String.format("File does not exist: '%s'", file.getAbsoluteFile()));
+                log.debug("File does not exist: '" + file.getAbsoluteFile() + "'");
             }
         } else {
             log.debug("Skipping 'null' file");
@@ -56,7 +56,7 @@ public class MigrationConfigurationProvider {
         if (CONFIGURATION_PATTERN.matcher(name).matches()) {
             return true;
         } else {
-            log.debug(String.format("Skipping file: '%s'", name));
+            log.debug("Skipping file: '" + name + "'");
         }
         return false;
     }

@@ -17,7 +17,6 @@ import java.util.List;
 @Mojo(name = "migrate", defaultPhase = LifecyclePhase.PROCESS_SOURCES)
 public class Migration extends AbstractMojo {
 
-
     @Parameter(defaultValue = "${session.executionRootDirectory}", property = "migrationConfigurationLocation",
             required = true)
     private File migrationConfigurationLocation;
@@ -46,7 +45,6 @@ public class Migration extends AbstractMojo {
         stopIfNotValid(configs);
 
         for (MigrationConfiguration config : configs) {
-            getLog().info("execute migration executor");
             new MigrationExecutor(config, getLog()).execute();
         }
     }
@@ -54,6 +52,7 @@ public class Migration extends AbstractMojo {
     private void stopIfNotValid(List<MigrationConfiguration> configs) {
         for (MigrationConfiguration config : configs) {
             if (!configValidator.isValid(config)){
+                getLog().error("Invalid config " + config);
                 System.exit(1);
             }
         }

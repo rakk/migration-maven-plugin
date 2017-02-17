@@ -4,6 +4,10 @@
     <sources>
         <source>
             <filePattern>.*\.java</filePattern>
+            <path>src/main/java</path>
+        </source>
+        <source>
+            <filePattern>.*\.java</filePattern>
             <path>src/test/java</path>
         </source>
         <source>

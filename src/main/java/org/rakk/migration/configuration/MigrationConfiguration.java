@@ -97,4 +97,10 @@ public class MigrationConfiguration {
     public boolean hasSources() {
         return sources != null && getSourcesList().size() > 0;
     }
+
+    @Override
+    public String toString() {
+        return "Config: [name: " + name + "], file: [" + moduleEntryPoint.getAbsolutePath() + "]";
+    }
+
 }

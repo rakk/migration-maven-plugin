@@ -13,7 +13,7 @@ import java.io.StringWriter;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 
 public class MigrationConfigurationTest {
