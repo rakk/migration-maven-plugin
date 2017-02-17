@@ -3,7 +3,8 @@
 
 ## Overview
 
-This plugin will help you with migration any maven dependency.
+This plugin will help you with migration dependency.
+The migration will not be the completed, it is more a starting point.
 
 Features:
 * setup sources location
@@ -66,5 +67,10 @@ mvn org.rakk:migration-maven-plugin:migrate
 
 ```
 
+## FAQ
+
 Where can I found example configuration for commons library?
-Be the first one who will create such configuration.
+> Be the first one who will create such configuration.
+
+What kind of guarantee I got that migration will be successful?
+> None. Zero. Nothing.
