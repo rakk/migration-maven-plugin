@@ -9,6 +9,9 @@ Features:
 * setup sources location
 * replacing java/groovy package imports
 
+## Migrations:
+* [QueryDSL 3.x to 4.x](querydsl.form.3.to.4.migration.xml)
+
 ## How to run install plugin
 
 
