@@ -23,26 +23,7 @@ mvn clean install
 
 ## How to run plugin in your maven project
 
-### Configuring plugin
-
-Add plugin to your project:
-
-```
-    <profiles>
-        <profile>
-            <id>migrate</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.rakk</groupId>
-                        <artifactId>migration-maven-plugin</artifactId>
-                        <version>1.0-SNAPSHOT</version>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-```
+### Add you configurations for migrations
 
 Put your migration configuration in root project.
 Migration configuration must ends with ```.migration.xml```
@@ -53,7 +34,7 @@ Example configuration you can find below.
 Execute this command to run plugin:
 
 ```
-mvn org.rakk:migration-maven-plugin:migrate -Pmigrate
+mvn org.rakk:migration-maven-plugin:migrate
 ```
 
 ## Example configuration: example.migration.xml
