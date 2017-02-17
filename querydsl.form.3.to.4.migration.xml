@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<migrationConfiguration>
+    <!--
+        configuration for https://github.com/rakk/migration-maven-plugin/
+    -->
+    <name>Migration ... from version 3.x to 4.x</name>
+    <sources>
+        <source>
+            <filePattern>.*\.java</filePattern>
+            <path>src/main/java</path>
+        </source>
+        <source>
+            <filePattern>.*\.java</filePattern>
+            <path>src/test/java</path>
+        </source>
+        <source>
+            <filePattern>.*\.groovy</filePattern>
+            <path>src/test/groovy</path>
+        </source>
+    </sources>
+    <importUpdates>
+        <!--
+            general package renaming
+        -->
+        <!-- types -->
+        <importUpdate>
+            <oldPath>com.mysema.query.types</oldPath>
+            <newPath>com.querydsl.core.types</newPath>
+        </importUpdate>
+
+        <!-- sql -->
+        <importUpdate>
+            <oldPath>com.mysema.query.sql</oldPath>
+            <newPath>com.querydsl.sql</newPath>
+        </importUpdate>
+
+        <!-- query -->
+        <importUpdate>
+            <oldPath>com.mysema.query</oldPath>
+            <newPath>com.querydsl.query</newPath>
+        </importUpdate>
+
+        <!-- individual -->
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.expr.BooleanExpression</oldPath>
+            <newPath>com.querydsl.core.types.dsl.BooleanExpression</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.expr.NumberExpression</oldPath>
+            <newPath>com.querydsl.core.types.dsl.NumberExpression</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.path.NumberPath</oldPath>
+            <newPath>com.querydsl.core.types.dsl.NumberPath</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.path.StringPath</oldPath>
+            <newPath>com.querydsl.core.types.dsl.StringPath</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.path.PathBuilder</oldPath>
+            <newPath>com.querydsl.core.types.dsl.PathBuilder</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.query.Tuple</oldPath>
+            <newPath>com.querydsl.core.Tuple</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.query.BooleanBuilder</oldPath>
+            <newPath>com.querydsl.core.BooleanBuilder</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.expr.StringExpression</oldPath>
+            <newPath>com.querydsl.core.types.dsl.StringExpression</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.expr.ComparableExpressionBase</oldPath>
+            <newPath>com.querydsl.core.types.dsl.ComparableExpressionBase</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.expr.ComparablePath</oldPath>
+            <newPath>com.querydsl.core.types.dsl.ComparablePath</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.path.ComparablePath</oldPath>
+            <newPath>com.querydsl.core.types.dsl.ComparablePath</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.expr.DslExpression</oldPath>
+            <newPath>com.querydsl.core.types.dsl.DslExpression</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.query.support.Expressions</oldPath>
+            <newPath>com.querydsl.core.types.dsl.Expressions</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.query.group.Group</oldPath>
+            <newPath>com.querydsl.core.group.Group</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.query.group.GroupBy</oldPath>
+            <newPath>com.querydsl.core.group.GroupBy</newPath>
+        </importUpdate>
+        <importUpdate>
+            <oldPath>com.querydsl.core.types.path.BooleanPath</oldPath>
+            <newPath>com.querydsl.core.types.dsl.BooleanPath</newPath>
+        </importUpdate>
+    </importUpdates>
+</migrationConfiguration>
