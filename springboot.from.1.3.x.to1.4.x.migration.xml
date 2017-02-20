@@ -20,15 +20,11 @@
     </sources>
     <importUpdates>
         <importUpdate>
-            <oldPath>org.springframework.boot.cotext.embedded.FilterRegistrationBean</oldPath>
+            <oldPath>org.springframework.boot.context.embedded.FilterRegistrationBean</oldPath>
             <newPath>org.springframework.boot.web.servlet.FilterRegistrationBean</newPath>
         </importUpdate>
         <importUpdate>
-            <oldPath>org.springframework.boot.cotext.embedded.ServletContextInitializer</oldPath>
-            <newPath>org.springframework.boot.web.servlet.ServletContextInitializer</newPath>
-        </importUpdate>
-        <importUpdate>
-            <oldPath>org.springframework.boot.cotext.embedded.ServletContextInitializer</oldPath>
+            <oldPath>org.springframework.boot.context.embedded.ServletContextInitializer</oldPath>
             <newPath>org.springframework.boot.web.servlet.ServletContextInitializer</newPath>
         </importUpdate>
     </importUpdates>
